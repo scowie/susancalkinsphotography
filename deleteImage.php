@@ -28,6 +28,10 @@ foreach($galleries as $gallery){
 	$targetGalleryName=$gallery->getAttribute('name');
 }
 
+foreach($_POST as $key => $value) {
+	echo $key, $value;
+}
+
 //get the filename of the image to be added
 $imageToDelete=$_POST['imageID'];
 //find the target image
