@@ -45,7 +45,7 @@
 						}
 						
 						//get the gallery nodes from the XML file
-						$galleryNodes = $xpath->query('//gallery');
+						$galleryNodes = $xpath->query('//gallery[not(@visible="false")]');
 						
 						$galleryArray = array_values(dnl2array($galleryNodes));
 						
