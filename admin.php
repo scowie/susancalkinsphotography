@@ -66,6 +66,11 @@
 				foreach ($sortedGalleryArray as $gallery) {
 					$editName=$gallery->getAttribute('name');
 					$editID=$gallery->getAttribute('id');
+					$visibility=$gallery->getAttribute('visible');
+					$toggleButtonClass = 'galleryIsVisibleButton';
+					if($visibility == "false") {
+						$toggleButtonClass = 'galleryIsHiddenButton';
+					}
 					$deleteID=$editID;
 					echo "<div class=\"galleryList\">";
 					echo "<h2 class=\"admin\" style=\"float:left; margin-right:5px;\">";
@@ -80,7 +85,7 @@
 					echo "<form action=\"moveGalleryDown.php\" method=\"POST\"><input type=\"submit\" value=\"$editName\" name=\"galleryName\" class=\"moveGalleryDownButton\"><input type=\"hidden\" value=\"$editID\" name=\"galleryID\" ><input type=\"hidden\" value=\"$editID\" name=\"$editID\" ></form>";
 
 					// toggle gallery visibility
-					echo "<form action=\"toggleGalleryVisibility.php\" method=\"POST\"><input type=\"submit\" value=\"$editName\" name=\"galleryName\" class=\"moveGalleryDownButton\"><input type=\"hidden\" value=\"$editID\" name=\"galleryID\" ><input type=\"hidden\" value=\"$editID\" name=\"$editID\" ></form>";
+					echo "<form action=\"toggleGalleryVisibility.php\" method=\"POST\"><button type=\"submit\" value=\"$editName\" name=\"galleryName\" class=\"$toggleButtonClass\"></button><input type=\"hidden\" value=\"$editID\" name=\"galleryID\" ><input type=\"hidden\" value=\"$editID\" name=\"$editID\" ></form>";
 
 					echo "</br>";
 					echo "</div>";

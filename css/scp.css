@@ -216,6 +216,27 @@ h4.admin {text-align:center; font-size:14px; font-weight:400; color:maroon;
 	.moveGalleryUpButton:hover {opacity:0.5; border:1px solid gray; }
 	.moveGalleryDownButton {position:relative; float:left; width:22px; height:20px; color:transparent; background-image:url('../images/downShift.png'); background-repeat:no-repeat; border:none;}
 	.moveGalleryDownButton:hover {opacity:0.5; border:1px solid gray; }
+
+	.galleryIsVisibleButton {position:relative; float:left; cursor:pointer;background-color:transparent;border:none; outline:none;}
+	.galleryIsVisibleButton:before {
+		content: "\f06e"; 
+		font-family: 'FontAwesome';
+		font-size: 16px;
+		left:5px;
+		position:absolute;
+		top:2px;
+	}
+
+	.galleryIsHiddenButton {position:relative; float:left; cursor:pointer;background-color:transparent;border:none; outline:none;}
+	.galleryIsHiddenButton:before {
+		content: "\f070"; 
+		font-family: 'FontAwesome';
+		font-size:16px;
+		left:5px;
+		position:absolute;
+		top:2px;
+	}
+
 	.editGalleryButton {position:relative; float:left; color:transparent; height:20px; width:20px; background:#EEEEEE; background-size:contain; background-image: url('../images/edit2.png'); background-repeat:no-repeat;
 	border:none;}
 	.editGalleryButton:hover{opacity:0.5; border:1px solid gray;}
