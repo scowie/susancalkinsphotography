@@ -1,0 +1,314 @@
+/* css reset - makes the layout looking good in all browsers */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
+ol, ul {
+	list-style: none; }
+body{width: 100%; /*background-image: url('../images/background/surfer10.jpg');*/ background: #E8E7E2; }
+
+/***************************************************/
+/*                 MISC. SITEWIDE                  */
+/***************************************************/
+
+.wrap{position:absolute; left:50%; overflow:visible; background:#E8E7E2; 
+width:  775px; height: 675px; margin-left: -387.5px; margin-right:-387.5px; } 
+.wrapBorder{position:absolute; left:50%; overflow:visible; background:#E8E7E2;
+width:  855px; height: 680px; margin-left: -427.5px; margin-right:-427.5px; top: -340px; }
+.pageTitle{height:5%; margin-left:auto; margin-right:auto; margin-top:2.9629%; margin-bottom:1.0%;}
+.pageTitle h1{text-align:center; text-shadow: 1px 1px #ffffff; font-size:20px; font-weight:400; color:#999794; text-transform: uppercase; letter-spacing: 2px;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+.pageTitleC{height:3.5%; margin-left:auto; margin-right:auto; margin-top:2.9629%; margin-bottom:0%;}
+.pageTitleC h1{text-align:left; font-size:14px; font-weight:400; color:#616161; letter-spacing: 2px;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+#horizon{position: absolute; top: 50%; width: 100%; height: 1px; overflow: visible; }	
+.opaque{display:none; opacity:0; }
+
+/* Available font families (need to reference in html files (use the TitleMetaFonts.php file)
+	Others can be downloaded from Google:
+		font-family: 'Open Sans', sans-serif;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-family: 'Poiret One', cursive;
+		font-family: 'Quicksand', sans-serif; 
+		font-family: 'Karla', sans-serif;
+		font-family: 'Inconsolata'; 
+		font-family: 'Josefin Slab';
+	
+	How to reference in html:
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+
+/***************************************************/
+/*                TOP CONTAINER                    */
+/***************************************************/
+
+#top_container{position:relative; height: 11.111%; width: 100%; opacity:1; margin-top: 1.5%; margin-bottom: 0.75%;}
+#logo {position:relative; top:5%; left:0px; height: 90%; width: 38.71%; }
+#logo_image{max-height:100%; max-width:100%; opacity:0.9;}
+#nav {position:absolute; top:46.667%; right:0.6452%; width: 58.065%; height: 33.333%; }
+ul#navigation {margin:0px auto; position:relative; margin-left:auto; height: 100%; margin-right:auto; }
+ul#navigation li {display:inline; height:85%; font-size:100%; padding-left:4%; padding-right:4%; position:relative; border-right:1px solid #BEB9AC; float:right; }
+ul#navigation li.last {border-right:none;}
+ul#navigation li a {text-shadow: 1px 1px #ffffff; padding:0; color:#BEB9AC; text-decoration:none; display:inline-block; opacity: 1;  height:100%;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		/**/
+ }
+ul#navigation li a:hover {font-weight: 400; color: #B22222; }
+ul#navigation li:hover > a { } 
+/* Drop-Down Navigation **********************************/
+ul#navigation li:hover > ul {background: #808080; visibility:visible; opacity:0.8; }
+ul#navigation ul, ul#navigation ul li ul {list-style: none; margin: 0px; padding: 0px; visibility:hidden; position: absolute;  z-index: 9999; width:200%; opacity: 1; box-shadow:1px 1px 3px #ccc; opacity:0; }
+ul#navigation ul {left: 0; }
+ul#navigation ul li ul {top: 0;  }
+ul#navigation ul li {clear:both; float:left; width:90%; border:0 none; border-bottom:1px solid #c9c9c9; }
+ul#navigation ul li a {font-size: 85%; display:inline-block; background:none; color: #FFF5EE; text-align: left; text-decoration:none; border:0 none; float:left; clear:both; text-shadow: none; margin-bottom:2%; margin-left:7.5%; margin-right:2px; padding-left:2px; padding-right:2px;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+ul#navigation ul li a:hover {color: #FFF5EE; font-weight:bold; }
+ul#navigation ul li input{font-size:85%; display:inline-block; float:left; clear:left; padding-left:0px; padding-right:0px; color: #FFF5EE; border:none; background:none; margin-bottom:2%; margin-left:4%; margin-right:0px; text-align:left; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+ul#navigation ul li input.currentLink{color: #FFF5EE; font-weight:bold; background:none; border:none; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+ul#navigation ul li input[type="submit"]:hover{font-weight:bold; }
+
+
+/***************************************************/
+/*                    INDEX                        */
+/***************************************************/
+
+.wrapIndex{position: absolute; width: 400px; height: auto; left:50%; margin-left: -200px; margin-right: -200px; top:-150px; overflow:visible; text-align:center; background:transparent;}
+.wrapIndex:hover{outline:5px solid black;}
+#mainEntry{display:block; background:transparent; }
+#landing_logo_image{max-width:95%; position:relative; }
+#fullscreen{position:fixed; top:0; right:0; bottom:0; left:0; }
+
+
+/***************************************************/
+/*                   HOME PAGE                     */
+/***************************************************/
+
+#landscape_container{position:relative; margin-left:auto; margin-right:auto; margin-bottom:-10px; overflow:hidden; outline:2px solid white; height: 550px; width: 775px;}
+#slides{position: absolute; overflow: hidden; left: 0px; top: 0px; width: 775px; height: 550px; }
+
+
+/***************************************************/
+/*                 PORTFOLIOS                      */
+/***************************************************/
+.portfolioListWrapper{position:relative; border-bottom: 1px solid #999794; height:21%; padding-bottom:10px; }
+p.portfolioDescription {position:absolute; left:180px; top:30px; color:#616161; font-size:14px;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:400;
+		/**/
+}
+h4.portfolioList {position:relative; color:#616161; font-size:16px; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+.portfolioCoverButton {position:relative; float:left; top: 5px; color:transparent; background:#E8E7E2;  background-size:contain; background-repeat:no-repeat; height:100px; width:150px;  border:none; margin-right:3%; }
+.portfolioCoverButton:hover{opacity:0.5;}
+#portfolioCoverContainer{position:relative; margin-left:auto; margin-right:auto; height: 70.37%; width: 100%; overflow:visible; }
+#portfolioThumbGrid{position:relative; margin-left:auto; margin-right:auto; height: auto; width: 75%; overflow:visible; background:transparent; }
+#portfolioTitle{height:40px; margin-left:auto; margin-right:auto; margin-top:20px; margin-bottom:20px;}
+#portfolioTitle h1{text-align:center; font-size:20px; font-weight:400; color:#999794; text-transform: uppercase; letter-spacing: 2px;	
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+
+
+/***************************************************/
+/*                    ABOUT                        */
+/***************************************************/
+#aboutContainer{position:relative; text-align: justify; text-justify: inter-word; }
+#susanPhotoContainer{position:relative; float:left; margin-right:2%; height:10%; width:10%; }
+img.susanPhoto{max-width:100%; margin-top:5%;}
+p.about {color:#616161; font-size:16px; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+
+/***************************************************/
+/*                  COPYRIGHT                      */
+/***************************************************/
+#copyrightContainer{text-align: justify; text-justify: inter-word; }
+p.copyright {color:#616161; font-size:12px; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+
+
+/***************************************************/
+/*                   CONTACT                       */
+/***************************************************/
+#contactContainer{text-align: center; }
+p.contact {color:#616161; font-size:16px; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		font-weight:300;
+		/**/
+}
+
+
+/***************************************************/
+/*               ADMIN MAIN PAGE                   */
+/***************************************************/
+hr.dotted {border-top: 2px dotted white; color: white; height: 1px; width:95%; margin-top:15px; margin-bottom:15px;}
+h1.admin{text-decoration:underline; margin-bottom:5px; font-size:16px; font-weight:400; color:#999794; text-transform: uppercase;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+h2.admin{font-size:12px; font-weight:400; color:#999794; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/ 		
+}
+h3.admin{ margin-top:5px; font-size:12px; font-weight:400; color:red; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+h4.admin {text-align:center; font-size:14px; font-weight:400; color:maroon; 
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+#admin_galleries{margin-left:10px;}
+#logout{float:left;}	
+.galleryList {border-bottom:1px solid gray; margin-top:5px; margin-bottom:2px; padding:0.5%; height:25px;}
+	.galleryList h4{float:left; margin-right:5px;}
+	.moveGalleryUpButton {position:relative; float:left; width:22px; height:20px; color:transparent; background-image:url('../images/upShift.png'); background-repeat:no-repeat; border:none;}
+	.moveGalleryUpButton:hover {opacity:0.5; border:1px solid gray; }
+	.moveGalleryDownButton {position:relative; float:left; width:22px; height:20px; color:transparent; background-image:url('../images/downShift.png'); background-repeat:no-repeat; border:none;}
+	.moveGalleryDownButton:hover {opacity:0.5; border:1px solid gray; }
+	.editGalleryButton {position:relative; float:left; color:transparent; height:20px; width:20px; background:#EEEEEE; background-size:contain; background-image: url('../images/edit2.png'); background-repeat:no-repeat;
+	border:none;}
+	.editGalleryButton:hover{opacity:0.5; border:1px solid gray;}
+	.deleteGalleryButton {position:relative; float:left; color:transparent; background:#EEEEEE; background-size:contain; background-image: url('../images/delete.png'); background-repeat:no-repeat; height:20px; width:20px;
+	border:none;}
+	.deleteGalleryButton:hover{opacity:0.5; border:1px solid gray; }
+.addNewGalleryButton {float:left; color:transparent; background:#EEEEEE; background-size:contain; margin:0.5%; 	background-image: url('../images/add.png'); background-repeat:no-repeat; height:20px; width:20px; border:none;}
+.addNewGalleryButton:hover {opacity:0.5; border:1px solid gray;}	
+.newGalleryTextBox {float:left; position:relative; top:3px;}
+	
+#admin_slideshow{margin-top:10px; margin-left:10px;}
+.removeImageButton {position:relative; float:left; color:transparent; background-image: url('../images/minus.png'); background-repeat:no-repeat; height:20px; width:20px; border:none; }
+
+#admin_about{margin-top:10px; margin-left:10px; }
+.aboutTextArea{position:relative; top: 23%; left: 0%; width:98%; height:auto; min-height:125px;}	
+.saveAboutButton {height:20px; width:20px; position:relative; color:transparent; background-image: url('../images/save.png'); background-repeat: no-repeat; border:none;}
+.saveAboutButton:hover {opacity:0.5; border:1px solid gray;}
+
+#admin_copyright{margin-top:10px; margin-left:10px; }
+.copyrightTextArea{position:relative; top: 23%; left: 0%; width:98%; height:auto; min-height:125px;}	
+.saveCopyrightButton {height:20px; width:20px; position:relative; color:transparent; background-image: url('../images/save.png'); background-repeat: no-repeat; border:none;}
+.saveCopyrightButton:hover {opacity:0.5; border:1px solid gray;}
+
+#admin_contact{margin-top:10px; margin-left:10px;}
+.savePhoneInfo{position:relative; float:left; width:125px; margin-left:5px; margin-bottom:10px;}
+.saveEmailInfo{position:relative; float:left; width:250px; margin-left:5px;}
+.savePhoneEmailButton{height:20px; width:20px; position:relative; color:transparent; background-image: url('../images/save.png'); background-repeat: no-repeat; border:none;}
+
+#admin_photo{margin-top:10px; margin-left:10px;}
+
+.adminPhotoAddButton{position:relative; left:3%; height:20px; width:20px; color:transparent; background-image: url('../images/check.png'); background-repeat: no-repeat; border:none; }
+.adminPhotoAddButton:hover{opacity:0.5; border:1px solid gray; }
+#adminPhotoContainer{height:50px; width:40px; position:relative; border:1px solid gray; }
+.adminPhotoAddContainer{position:relative;}
+.adminUploadPhotoContainer{position:relative; margin-top:10px;}
+#admin_photo_upload{margin-left:10px;}
+
+#admin_logo{margin-top:10px; margin-left:10px; margin-bottom:10px;}
+#admin_logo_upload{margin-left:10px;}
+#adminLogoContainer{height:50px; width:200px; position:relative; border:1px solid gray; }
+.adminLogoAddContainer{position:relative;}
+.adminUploadLogoContainer{position:relative;}
+.adminLogoAddButton{position:relative; left:3%; height:20px; width:20px; color:transparent; background-image: url('../images/check.png'); background-repeat: no-repeat; border:none; }
+.adminLogoAddButton:hover{opacity:0.5; border:1px solid gray; }
+.uploadLogoSubmitButton{position:relative; top:-10px; height:20px; width:20px; color:transparent; background-image: url('../images/add.png'); background-repeat: no-repeat; border:none;}
+.uploadLogoSubmitButton:hover{opacity:0.5; border:1px solid gray; }
+.uploadPhotoSubmitButton{position:relative; top:-10px; height:20px; width:20px; color:transparent; background-image: url('../images/add.png'); background-repeat: no-repeat; border:none;}
+.uploadPhotoSubmitButton:hover{opacity:0.5; border:1px solid gray; }
+
+	
+/***************************************************/
+/*                  EDIT PAGE                      */
+/***************************************************/
+
+h2.edit {font-size:15px; font-weight:400; color:#999794;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+#editImageThumbContainer{position:relative; height:55px; width:77.5px; float:left; border:1px solid black; overflow:visible; margin-right:5px; margin-bottom:3px;}
+.imageAddContainer {position:relative; }
+.inlineText {position:relative; margin-bottom:10px;}
+.addImageForm {width:350px; margin-bottom:3px;}
+.inlineText2 {position:relative; }
+.inlineText3 {position:relative; }
+.textArea {position:relative; }
+.imageList {position:relative; border-bottom:1px solid gray; margin-bottom:5px; margin-top:3px; }
+.imageList h5{margin-top:10px}
+.editImageThumb {max-height:100%; max-width:100%; position:relative; }
+.deleteImageButton {position:relative; float:left; color:transparent; background-image: url('../images/delete.png'); background-repeat:no-repeat; height:20px; width:20px; border:none; }
+.deleteImageButton:hover {opacity:0.5; border:1px solid gray; }
+.moveImageUpButton {position:relative; float:left; width:22px; height:20px; color:transparent; background-image: url('../images/upShift.png'); background-repeat:no-repeat; border:none; }
+.moveImageUpButton:hover {opacity:0.5; border:1px solid gray; }
+.moveImageDownButton {position:relative; float:left; width:22px; height:20px; color:transparent; background-image: url('../images/downShift.png'); background-repeat:no-repeat; border:none; }
+.moveImageDownButton:hover {opacity:0.5; border:1px solid gray; }
+.saveImageButton {height:20px; width:20px; position:relative; top:-2px; color:transparent; background-image: url('../images/save.png'); background-repeat: no-repeat; border:none; }
+.saveImageButton:hover {opacity:0.5; border:1px solid gray; }
+.addImageButton{color:black; position:relative;}
+.saveGalleryNameButton {height:20px; width:20px; position:relative; color:transparent; left:5px; background-image: url('../images/save.png'); background-repeat: no-repeat; border:none;}
+.saveGalleryNameButton:hover {opacity:0.5; border:1px solid gray; }
+.editGalleryName {position:relative; }
+.saveChanges {margin-top:2%;}
+
+/***************************************************/
+/*                   FOOTER                        */
+/***************************************************/
+
+footer{position:absolute; bottom:1%; width:100%; margin-left: auto; margin-right: auto; height: 2.5%;
+		/**/
+		font-family: 'Open Sans', sans-serif;
+		/**/
+}
+footer p{font-size:12px; text-align:center; }
+#admin_link{display:inline-block; float:left; background:#E8E7E2; background-size:contain; background-image: url('../images/controlPanel.png'); background-repeat:no-repeat; margin-right: 1%; height: 100%; width: 2.322%; opacity:0.5; }
+#admin_link:hover{opacity:1.0; }
+a.admin {display:block; width:100%; height:100%; margin: 0px; cursor:pointer; font-size:12px; }

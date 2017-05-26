@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{width: 100%; background: #EEEEEE; }
+#mobileContainer{width:95%;}
+.mobileImage{max-width: 100%;}
+.mobileContact{color: #202020; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;}
+.pageTitleMobile{color: #202020; text-align:center; text-decoration: underline; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;}
+.about{color: #202020; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;}
+.copyright{color: #202020; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;}
+
+#aboutContainerMobile{width:84%; margin-left:8%; text-align: justify; text-justify: inter-word;}
+#copyrightContainerMobile{width:84%; margin-left:8%; text-align: justify; text-justify: inter-word;}
+
+#susanPhotoContainerMobile{position:relative; float:left; margin-right:3%; height:125px; width:100px; }
+
+#galleries {position: relative; height: 90%; width: 100%; background:#EEEEEE; }
+						 
+#galleries ul {position: relative; display:block;  width: 100%; height: 100%; }
+						
+#galleries ul li{color: #202020; display: block; height: 40px; border-top: 1px solid #AAAAAA; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif; }
+
+/* for last item in list */
+.last{border-bottom: 1px solid #AAAAAA; }
+
+#galleries ul li p{position:absolute; right:12px; font-size:20px; margin-top:7px; margin-right:20px; z-index: 2; }
+
+#galleries ul li a{position:relative; color: #202020; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;
+				border:none; background:transparent; float:left; display:block; width:100%; height:32px; margin-top:0px;
+				margin-left:18px; z-index: 9; padding-top:8px; }
+			
+#galleries ul li a:link{text-decoration:none; z-index: 9; }
+			
+#galleries ul li a:visited{text-decoration:none; z-index: 9; }
+			
+#galleries ul li a:hover{text-decoration:none; background:transparent; z-index: 9; }
+			
+#galleries ul li a:active{text-decoration:none; z-index: 9; }
+			
+nav ul li input{position:relative; color: #202020; font-size: 16px; font-weight: normal; font-family: 'Open Sans', sans-serif;
+				border:none; background:transparent; float:left; display: block; width:100%; height:40px; text-align: left;
+				margin-left:18px; z-index: 9; }
+
+nav ul li input:hover{cursor:pointer; display: block; z-index: 9; }
+
+nav ul li input.currentLink{font-weight: normal; z-index: 9; }
+
+#top_container{position:relative; height: 90px; width: 100%; background: #EEEEEE; }
+		
+#logo {position:relative; text-align:center; height: 100%; width: 100%; }
+				
+#logo_image{padding-top:5px; height:75px; }
+				
+
