@@ -14,13 +14,13 @@
 	<link rel="stylesheet" href="css/justifiedGallery.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	
-	
-	<script type="text/javascript" src="js/scp.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/changeSize.js"></script>
 	<script type="text/javascript" src="js/jquery.justifiedGallery.js"></script>
 	<script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 	<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
+	<script type="text/javascript" src="js/scp.js"></script>
+	<script type="text/javascript" src="js/changeSize.js"></script>
+
 	
 </head>
 

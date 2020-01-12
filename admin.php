@@ -12,10 +12,9 @@
 	<script type="text/javascript">
 		document.write('<style type="text/css">body{display:none}</style>');
 	</script>
-	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
 	<script type="text/javascript" src="js/scp.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/changeSize.js"></script>
 	
 </head>

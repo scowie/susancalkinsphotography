@@ -11,12 +11,12 @@
 		document.write('<style type="text/css">body{display:none}</style>');
 	</script>
 	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+	<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
 	
 	<script type="text/javascript" src="js/scp.js"></script>
-	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/changeSize.js"></script> 
-	<script type="text/javascript" src="js/jquery.lazy.min.js"></script>
-	<script type="text/javascript" src="js/jssor.slider.mini.js"></script>
 	
 <script type="text/javascript">
 		jQuery(document).ready(function ($) {
@@ -187,7 +187,7 @@
 			}
 		?>
 		<!-- Trigger for responsive design -->
-		<script>jssor_slider1_starter('landscape_container');</script>
+		<!-- <script>jssor_slider1_starter('landscape_container');</script> -->
 		
 		</div>
 		
