@@ -44,7 +44,8 @@
 						$galleryName=$gallery->getAttribute('name');
 						$galleryID=$gallery->getAttribute('id');
 						if (isset($post[$galleryID])) {
-				
+
+				echo "<a href=\"admin.php\">BACK TO ADMIN PAGE</a>";
 				//display the main title
 				echo "<div class=\"pageTitle\"><h1>$galleryName</h1><div id=\"admin_link\"><a href=\"admin.php\" class=\"admin\"></a></div></div>";
 				
